@@ -1,0 +1,12 @@
+### User Signup
+POST http://localhost:8080/api/auth/sign-up HTTP/1.1
+Content-Type:  application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "12345"
+}
+
+### refresh-token
+POST http://localhost:8080/api/auth/refresh-token HTTP/1.1
+Content-Type:  application/json

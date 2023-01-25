@@ -1,0 +1,39 @@
+### create a new note ###
+POST http://localhost:8080/api/note HTTP/1.1
+Content-Type:  application/json
+Authorization: token
+
+{
+    "title": "title",
+    "body":"body",
+    "tags":["636275ac441e826cc9e86371"]
+}
+
+
+### get all note ###
+GET http://localhost:8080/api/note HTTP/1.1
+Content-Type:  application/json
+Authorization: token
+
+
+
+### update a note ###
+Put http://localhost:8080/api/note HTTP/1.1
+Content-Type:  application/json
+Authorization: token
+
+{
+    "id":"63627672441e826cc9e86390",
+    "title": "title",
+    "body":"body",
+    "tags":[]
+}
+
+### delete a note ###
+Delete http://localhost:8080/api/note HTTP/1.1
+Content-Type:  application/json
+Authorization: token
+
+{
+    "id":"636277c5fc948c5681fd4fd2"
+}
